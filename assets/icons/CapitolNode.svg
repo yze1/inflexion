@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="v2_copy_2" data-name="v2 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="500" y="1800" width="1400" height="200"/>
+  <rect class="cls-1" x="500" y="1100" width="1400" height="100"/>
+  <rect class="cls-1" x="600" y="1300" width="200" height="400"/>
+  <rect class="cls-1" x="1100" y="1300" width="200" height="400"/>
+  <rect class="cls-1" x="1600" y="1300" width="200" height="400"/>
+  <path class="cls-1" d="M1200,400c-331.37,0-600,268.63-600,600h1200c0-331.37-268.63-600-600-600Z"/>
+</svg>

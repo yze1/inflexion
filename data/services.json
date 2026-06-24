@@ -1,0 +1,66 @@
+{
+  "pillars": [
+    {
+      "title": "Anticipate",
+      "text": "Anticipate emerging policy developments",
+      "icon": "PolicyRadar"
+    },
+    {
+      "title": "Navigate",
+      "text": "Navigate complex regulatory environments",
+      "icon": "AdvisoryCompass"
+    },
+    {
+      "title": "Shape",
+      "text": "Shape policy outcomes",
+      "icon": "StakeholderOrbit"
+    },
+    {
+      "title": "Respond",
+      "text": "Respond to regulatory risk",
+      "icon": "RiskRing"
+    }
+  ],
+  "services": [
+    {
+      "title": "AI Policy & Regulatory Strategy",
+      "text": "We help clients understand emerging AI legislation, executive actions, agency guidance, procurement standards, and compliance frameworks at the federal and state levels. Our team assists organizations in preparing for changing regulatory environments before they become operational realities.",
+      "icon": "RegulatoryGrid"
+    },
+    {
+      "title": "Government Affairs & Stakeholder Engagement",
+      "text": "Inflexion works with policymakers, industry leaders, trade associations, and institutional stakeholders to help clients participate in the development of AI-related policy and regulatory initiatives. We help clients communicate priorities, identify risks, and shape outcomes.",
+      "icon": "StakeholderOrbit"
+    },
+    {
+      "title": "Industry Impact Analysis",
+      "text": "Artificial intelligence will reshape industries differently. Inflexion evaluates how AI-driven change may affect operations, workforce needs, compliance obligations, public perception, competitive positioning, and long-term strategic planning across sectors.",
+      "icon": "SignalLines"
+    },
+    {
+      "title": "Workforce & Organizational Transition Planning",
+      "text": "AI will significantly impact workforce structures, management practices, education systems, training needs, and organizational operations. Inflexion helps clients prepare for workforce disruption while identifying opportunities created by technological transition.",
+      "icon": "AdvisoryCompass"
+    },
+    {
+      "title": "Public Sector & Institutional Advisory",
+      "text": "We advise municipalities, authorities, educational institutions, healthcare organizations, non-profits, and public agencies on AI governance, procurement considerations, operational implementation, and policy development.",
+      "icon": "CapitolNode"
+    },
+    {
+      "title": "Risk, Governance & Reputation Management",
+      "text": "Organizations adopting or engaging with AI face growing scrutiny involving privacy, bias, liability, cybersecurity, transparency, and governance. Inflexion helps clients identify reputational and regulatory risks while developing practical governance strategies.",
+      "icon": "RiskRing"
+    },
+    {
+      "title": "Strategic Positioning & Long-Term Planning",
+      "text": "The organizations that engage early will help define the future regulatory and economic landscape surrounding artificial intelligence. Inflexion helps clients position themselves ahead of change rather than reacting after the rules are established.",
+      "icon": "DecisionPath"
+    },
+    {
+      "title": "Monitoring & Policy Intelligence",
+      "text": "AI policy is evolving rapidly at every level of government. Inflexion helps clients track legislative activity, regulatory developments, public-sector initiatives, and emerging political trends that may affect their industry, operations, or strategic direction.",
+      "icon": "PolicyRadar"
+    }
+  ]
+}

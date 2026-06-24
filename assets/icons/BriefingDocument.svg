@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="v2_copy_2" data-name="v2 copy 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1362.5,800v-400h-762.5v1600h1200V837.5h-400c-20.71,0-37.5-16.79-37.5-37.5ZM1200,1800h-500v-200h500l100,100-100,100ZM1600,1400h-900v-100h900v100ZM1600,1100h-900v-100h900v100Z"/>
+  <path class="cls-1" d="M1762.5,762.5l-325-325v325h325Z"/>
+</svg>

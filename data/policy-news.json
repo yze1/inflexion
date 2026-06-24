@@ -1,0 +1,65 @@
+{
+  "featured": {
+    "title": "Lorem ipsum dolor sit amet",
+    "date": "2026-01-15",
+    "jurisdiction": "Lorem",
+    "source": "Lorem ipsum",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nibh sed justo posuere facilisis.",
+    "whyItMatters": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum, nibh vitae lacinia posuere, arcu justo luctus erat.",
+    "body": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nibh sed justo posuere facilisis. Praesent eget neque id magna facilisis dignissim. Duis posuere, arcu a accumsan dignissim, lectus urna porttitor libero, vitae mattis arcu lacus id augue.",
+      "Suspendisse potenti. Morbi vel sem sit amet elit pharetra finibus. Cras sed volutpat nibh. Integer suscipit, arcu eu aliquet consequat, sapien lectus tristique ipsum, at tincidunt magna erat nec orci.",
+      "Donec dictum, nibh vitae lacinia posuere, arcu justo luctus erat, sed convallis sapien justo sed arcu. Nulla facilisi. Vivamus viverra mauris id mi dictum, at dignissim nulla porta.",
+      "Aliquam erat volutpat. Proin tempor sem id lectus gravida, quis finibus odio feugiat. Mauris in nunc in erat gravida blandit vel ac ipsum."
+    ],
+    "url": "#",
+    "tags": ["Lorem", "Ipsum", "Dolor"]
+  },
+  "archive": [
+    {
+      "title": "Consectetur adipiscing elit",
+      "date": "2026-01-12",
+      "jurisdiction": "Ipsum",
+      "source": "Lorem ipsum",
+      "summary": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "whyItMatters": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+      "body": [
+        "Consectetur adipiscing elit. Integer fermentum mi at arcu facilisis, vitae facilisis magna condimentum. Nam suscipit nisi ut ante pharetra, id vulputate elit bibendum.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Curabitur sed felis sed libero accumsan tincidunt.",
+        "Sed vitae lorem et nibh lacinia finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+      ],
+      "url": "#",
+      "tags": ["Consectetur"]
+    },
+    {
+      "title": "Sed do eiusmod tempor",
+      "date": "2026-01-08",
+      "jurisdiction": "Dolor",
+      "source": "Lorem ipsum",
+      "summary": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "whyItMatters": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+      "body": [
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam sed risus at ipsum pretium blandit. In hac habitasse platea dictumst.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Integer pulvinar, urna vitae cursus consequat, mi massa placerat leo, non aliquam velit nisl sed lectus.",
+        "Aenean non dui at lacus iaculis ultricies. Donec viverra libero id elit dignissim, vitae bibendum ipsum gravida."
+      ],
+      "url": "#",
+      "tags": ["Eiusmod"]
+    },
+    {
+      "title": "Ut labore et dolore magna",
+      "date": "2026-01-04",
+      "jurisdiction": "Amet",
+      "source": "Lorem ipsum",
+      "summary": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "whyItMatters": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      "body": [
+        "Ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Pellentesque habitant morbi tristique senectus et netus.",
+        "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Maecenas volutpat quam sit amet turpis porttitor, a facilisis ligula dictum.",
+        "Praesent non neque vel risus luctus rutrum. Donec tempor suscipit nibh, at pulvinar sapien dictum vitae."
+      ],
+      "url": "#",
+      "tags": ["Magna"]
+    }
+  ]
+}
