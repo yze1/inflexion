@@ -1,6 +1,31 @@
 const header = document.querySelector("[data-header]");
 const year = document.querySelector("[data-year]");
 const lighthouseFadeSections = document.querySelectorAll("[data-lighthouse-fade]");
+let pageMotionStarted = false;
+
+document.documentElement.classList.add("js-images");
+
+function markImageLoaded(image) {
+  image.classList.add("is-image-loaded");
+}
+
+document.querySelectorAll("img").forEach((image) => {
+  if (image.complete) {
+    markImageLoaded(image);
+    return;
+  }
+
+  image.addEventListener("load", () => markImageLoaded(image), { once: true });
+  image.addEventListener("error", () => markImageLoaded(image), { once: true });
+});
+
+document.addEventListener(
+  "load",
+  (event) => {
+    if (event.target instanceof HTMLImageElement) markImageLoaded(event.target);
+  },
+  true
+);
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -49,6 +74,8 @@ function prepareHeroLines() {
 }
 
 function startPageMotion() {
+  if (pageMotionStarted) return;
+  pageMotionStarted = true;
   prepareHeroLines();
 
   let hasStarted = false;
@@ -217,7 +244,12 @@ if (window.location.hash === "#briefing" && briefingModal) {
   window.setTimeout(() => openBriefingModal(), 120);
 }
 
-startPageMotion();
+if (document.readyState === "complete") {
+  startPageMotion();
+} else {
+  window.addEventListener("load", startPageMotion, { once: true });
+  window.setTimeout(startPageMotion, 2500);
+}
 queueRevealFallback();
 window.addEventListener("scroll", queueRevealFallback, { passive: true });
 window.addEventListener("resize", queueRevealFallback);
