@@ -894,6 +894,29 @@ h3 {
   padding: clamp(24px, 3vw, 42px);
 }
 
+.bio-card summary {
+  display: block;
+  cursor: pointer;
+  list-style: none;
+}
+
+.bio-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.bio-card summary h3 {
+  margin-bottom: 0;
+}
+
+.bio-card[open] summary h3 {
+  margin-bottom: 24px;
+}
+
+.bio-card-content {
+  display: grid;
+  gap: 16px;
+}
+
 .bio-card-full {
   grid-column: 1 / -1;
   justify-self: stretch;
