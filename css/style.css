@@ -886,7 +886,7 @@ h3 {
 
 .bio-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(18px, 3vw, 36px);
 }
 
@@ -895,9 +895,20 @@ h3 {
 }
 
 .bio-card summary {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 16px;
   cursor: pointer;
   list-style: none;
+}
+
+.bio-card-photo {
+  width: clamp(72px, 7vw, 104px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
 }
 
 .bio-card summary::-webkit-details-marker {
