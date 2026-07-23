@@ -16,7 +16,7 @@ function renderServices(data) {
         <article class="service-item reveal">
           ${
             service.icon
-              ? `<span class="icon-mark service-icon" aria-hidden="true"><img src="assets/icons/${service.icon}.svg" alt="" loading="lazy" /></span>`
+              ? `<span class="icon-mark service-icon" aria-hidden="true"><img src="/assets/icons/${service.icon}.svg" alt="" loading="lazy" /></span>`
               : ""
           }
           <div>
@@ -40,7 +40,7 @@ function renderPartners(data) {
     .join("<br>");
 }
 
-Promise.allSettled([loadJson("data/services.json"), loadJson("data/partners.json")]).then((results) => {
+Promise.allSettled([loadJson("/data/services.json"), loadJson("/data/partners.json")]).then((results) => {
   const [services, partners] = results;
 
   if (services.status === "fulfilled") {

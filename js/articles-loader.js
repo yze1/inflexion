@@ -107,7 +107,7 @@ async function loadArticleCards() {
       .map(
         (article) => `
           <article class="article-card reveal">
-            <a href="article.html?slug=${encodeURIComponent(article.slug)}">
+            <a href="/article/?slug=${encodeURIComponent(article.slug)}">
               <p class="eyebrow">Policy Intelligence</p>
               <h3>${escapeHTML(article.title)}</h3>
               <p>${escapeHTML(article.summary || "")}</p>
