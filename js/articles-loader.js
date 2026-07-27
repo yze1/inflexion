@@ -89,6 +89,11 @@ function markdownToHTML(markdown = "") {
   return html;
 }
 
+function articleBody(markdown = "") {
+  const summaryIndex = markdown.search(/^## Quick Summary$/m);
+  return summaryIndex === -1 ? markdown : markdown.slice(summaryIndex);
+}
+
 async function loadArticleCards() {
   const container = document.querySelector("[data-articles]");
   if (!container) return;
@@ -152,7 +157,8 @@ async function loadArticlePage() {
         <h1>${escapeHTML(article.title)}</h1>
         <p class="article-summary">${escapeHTML(article.summary || "")}</p>
         <time datetime="${escapeHTML(article.published_at || article.created_at || "")}">${articleDate(article)}</time>
-        <div class="article-body">${markdownToHTML(article.body_markdown || "")}</div>
+        <div class="article-body">${markdownToHTML(articleBody(article.body_markdown || ""))}</div>
+        <p class="article-byline">by The Inflexion Staff</p>
       </article>
     `;
 

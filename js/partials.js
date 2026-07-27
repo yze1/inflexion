@@ -17,12 +17,12 @@ function loadScript(src) {
   });
 }
 
-Promise.all([loadPartial("header"), loadPartial("footer"), loadPartial("briefing-modal")])
+Promise.all([loadPartial("header"), loadPartial("footer")])
   .then(async () => {
     const section = location.pathname.split("/").filter(Boolean)[0];
     document.querySelector(`.site-nav a[href="/${section}/"]`)?.classList.add("is-active");
 
-    await loadScript("/js/main.js?v=briefing-modal-3");
+    await loadScript("/js/main.js");
     await loadScript("/js/content-loader.js");
     if (document.querySelector("[data-articles], [data-article]")) {
       await loadScript("/js/articles-loader.js");

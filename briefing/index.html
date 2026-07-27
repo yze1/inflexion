@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Request an AI policy briefing from The Inflexion." />
+    <title>Request a Briefing | Inflexion</title>
+    <link rel="icon" href="/assets/icons/LogoFavicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="noise-layer" aria-hidden="true"></div>
+    <div class="page-loader" aria-hidden="true">
+      <img src="/assets/icons/Logo.svg" alt="" />
+    </div>
+    <div data-partial="header"></div>
+
+    <main>
+      <section class="section-pad article-page" aria-labelledby="briefing-title">
+        <div class="briefing-layout">
+          <div class="briefing-copy reveal">
+            <span class="icon-mark" aria-hidden="true"><img src="/assets/icons/BriefingDocument.svg" alt="" /></span>
+            <p class="eyebrow">Request a Briefing</p>
+            <h1 id="briefing-title">Start with the policy questions in front of your organization</h1>
+            <p>
+              Share a short note about your AI policy priorities. Inflexion can help assess
+              regulatory developments, stakeholder strategy, policy risk, and engagement options.
+            </p>
+          </div>
+          <form class="briefing-form reveal" action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New briefing request from The Inflexion website" />
+            <input type="hidden" name="from_name" value="The Inflexion Website" />
+            <input type="hidden" name="ccemail" value="mmosholder@theinflexion.com" />
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display: none" />
+            <div class="form-grid">
+              <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
+              <label><span>Organization</span><input type="text" name="organization" autocomplete="organization" required /></label>
+            </div>
+            <label><span>Email</span><input type="email" name="email" autocomplete="email" required /></label>
+            <label>
+              <span>Area of interest</span>
+              <select name="interest" required>
+                <option value="">Select one</option>
+                <option>AI Policy &amp; Regulatory Strategy</option>
+                <option>Government Affairs &amp; Stakeholder Engagement</option>
+                <option>Industry Impact Analysis</option>
+                <option>Workforce &amp; Organizational Transition Planning</option>
+                <option>Public Sector &amp; Institutional Advisory</option>
+                <option>Risk, Governance &amp; Reputation Management</option>
+                <option>Strategic Positioning &amp; Long-Term Planning</option>
+                <option>Monitoring &amp; Policy Intelligence</option>
+              </select>
+            </label>
+            <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+            <p class="form-note">Inflexion will only use this information to respond to your briefing request.</p>
+            <button class="button button-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div data-partial="footer"></div>
+    <script src="/js/partials.js"></script>
+  </body>
+</html>
