@@ -14,8 +14,8 @@ for (const page of pages) {
 
 const briefing = await readFile("briefing/index.html", "utf8");
 assert.match(briefing, /action="https:\/\/api\.web3forms\.com\/submit"/);
-assert.match(briefing, /value="YOUR_WEB3FORMS_ACCESS_KEY"/);
-assert.match(briefing, /name="ccemail" value="mmosholder@theinflexion\.com"/);
+assert.match(briefing, /name="access_key" value="[0-9a-f-]{36}"/);
+assert.doesNotMatch(briefing, /name="ccemail"/);
 
 const articles = await readFile("js/articles-loader.js", "utf8");
 const articleHelpers = articles.slice(0, articles.indexOf("async function loadArticleCards"));
