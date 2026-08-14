@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/api/seo?view=sitemap" },
+    { "source": "/articles", "destination": "/api/seo?view=articles" },
+    { "source": "/articles/", "destination": "/api/seo?view=articles" },
+    { "source": "/articles/tag/:slug", "destination": "/api/seo?view=tag&slug=:slug" },
+    { "source": "/articles/tag/:slug/", "destination": "/api/seo?view=tag&slug=:slug" },
+    { "source": "/articles/:slug", "destination": "/api/seo?view=article&slug=:slug" },
+    { "source": "/articles/:slug/", "destination": "/api/seo?view=article&slug=:slug" },
+    { "source": "/policy-intelligence", "destination": "/api/seo?view=policy-index" },
+    { "source": "/policy-intelligence/", "destination": "/api/seo?view=policy-index" },
+    { "source": "/policy-intelligence/:slug", "destination": "/api/seo?view=policy&slug=:slug" },
+    { "source": "/policy-intelligence/:slug/", "destination": "/api/seo?view=policy&slug=:slug" },
+    { "source": "/companies", "destination": "/api/seo?view=companies" },
+    { "source": "/companies/", "destination": "/api/seo?view=companies" },
+    { "source": "/companies/:slug", "destination": "/api/seo?view=company&slug=:slug" },
+    { "source": "/companies/:slug/", "destination": "/api/seo?view=company&slug=:slug" }
+  ]
+}

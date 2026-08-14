@@ -1080,6 +1080,26 @@ h3 {
   color: var(--text-secondary);
 }
 
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+.article-tag {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: inherit;
+  font: 0.75rem/1.2 "Space Mono", monospace;
+  padding: 0.4rem 0.7rem;
+  text-decoration: none;
+}
+
+.related-articles {
+  margin-top: 4rem;
+}
+
 .services-preview {
   align-items: start;
 }

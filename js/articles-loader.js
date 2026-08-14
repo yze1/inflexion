@@ -1,6 +1,5 @@
 const SUPABASE_URL = "https://cicwbrkoutyannqxguso.supabase.co";
-const SUPABASE_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNpY3dicmtvdXR5YW5ucXhndXNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5MDgwMTMsImV4cCI6MjA5NjQ4NDAxM30.UVa58rx4W5s5x9-PfAoc6ZE3IWOjP8YJUGvkGCdwvus";
+const SUPABASE_ANON_KEY = "sb_publishable_LbyLU09q6rcmyIQXh8msqg_zfSuwl6j";
 
 function escapeHTML(value = "") {
   return String(value)
@@ -100,7 +99,7 @@ async function loadArticleCards() {
 
   try {
     const articles = await fetchArticles(
-      "select=title,slug,summary,status,tags,created_at,published_at&status=in.(draft,published)&order=created_at.desc&limit=3"
+      "select=title,slug,summary,status,tags,created_at,published_at&status=eq.published&order=created_at.desc&limit=3"
     );
 
     if (!articles.length) {
@@ -112,7 +111,7 @@ async function loadArticleCards() {
       .map(
         (article) => `
           <article class="article-card reveal">
-            <a href="/article/?slug=${encodeURIComponent(article.slug)}">
+            <a href="/articles/${encodeURIComponent(article.slug)}/">
               <p class="eyebrow">Policy Intelligence</p>
               <h3>${escapeHTML(article.title)}</h3>
               <p>${escapeHTML(article.summary || "")}</p>
